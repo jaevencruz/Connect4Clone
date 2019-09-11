@@ -1,0 +1,7 @@
+This file implements a connect four game and an ANVIL variation of the game.
+
+The components of the program that currently work are the menu, the selection of color, and the selection of games. The choice to play a new game and to exit after finishing a game are also functional.
+The regular and Anvil games work as intended with the exception of a bug when choosing coordinates. This will be clarified when talking about the faults of the program.  All of the functions work normally and all return 0 after running.
+The board is printed and adjusted correctly when adding pieces to the board.
+
+The faults of this program include a bug where a player, either 1 or 2, tries to put a chip into column 2 and 7 for the first time.  When column 2 or 7 are initially chosen, no chip will be placed but the turn of the player is still used.  After the initial use of columns 2 and 7, the columns work normally.  Another fault of the program is that the anvils only stack on the first column.  When attempting to stack anvils on columns other than 1, only one anvil will be in the column.  
